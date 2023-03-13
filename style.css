@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(#555, #111);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*----- Header and Navigation -----*/
+header {
+  background-color: black;
+  color: #ffe;
+  height: 4vw;
+  min-height: 2vw;
+  display: flex;
+}
+header nav {
+  flex: 1;
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #ffe;
+}
+header nav a:hover {
+  color: #aaa;
+}
+
+.navlogin {
+  display: flex;
+  align-items: center;
+}
+.navlogin button {
+  font-weight: bold;
+  border-radius: 20%;
+  padding: 5px;
+  color: #ffe;
+  background-color: #d70;
+  flex: 1;
+  align-self: stretch;
+  margin-right: 10px;
+}
+.navlogin button:hover {
+  color: #aaa;
+  background-color: #c50;
+}
+.navlogin a {
+  margin-left: 10px;
+  flex: 2;
+}
+
+/*----- Footer and Contact Info -----*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4vw;
+}
+footer div {
+  margin: 0 2vw;
+  width: 40%;
+  border-left: 2px solid #d70;
+  padding-left: 10px;
+}
+
+h1,
+h2,
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*----- Image Gallery Border -----*/
+fieldset {
+  margin: 4vw 1vw;
+  border: 2px solid #d70;
+  border-radius: 20px 50px;
+}
+legend {
+  background-color: #d70;
+  border-radius: 15px 0 1vw 0;
+  padding: 0.2em 1.5em;
+  position: relative;
+  top: 12px;
+}
+.photoset {
+  border-radius: 20px;
+}
+
+/*----- Image Gallery -----*/
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.artwork {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 1vw;
+}
+.artwork img {
+  border-radius: 5px;
+  align-self: center;
+}
+/*----- Maximize images -----
+@keyframes maximize {
+  0% {
+    width: initial;
+  }
+  100% {
+    left: 10vw;
+    width: 80vw;
+  }
+}
+.artwork img:active {
+  animation-name: maximize;
+  animation-duration: 1s;
+} */
+.artwork figcaption {
+  align-self: center;
+}
+
+/*----- Image Gallery Size Settings -----*/
+.art img {
+  width: 400px;
+}
+.murals img {
+  width: 200px;
+}
+.photos img {
+  width: 100px;
+}
+.archive img {
+  width: 200px;
+}
